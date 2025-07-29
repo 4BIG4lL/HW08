@@ -75,9 +75,9 @@ void ABaseItem::ActivateItem(AActor* Activator)
 		GetWorld()->GetTimerManager().SetTimer(
 			DestroyParticleTimerHandle,
 			[Particle]()
-		{
-			Particle->DestroyComponent();
-		},
+			{
+				Particle->DestroyComponent();
+			},
 			2.0f,
 			false
 		);

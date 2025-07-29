@@ -1,5 +1,7 @@
 #include "SpawnVolume.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "SpartaGameState.h"
 
 ASpawnVolume::ASpawnVolume()
 {
@@ -83,6 +85,5 @@ AActor* ASpawnVolume::SpawnItem(TSubclassOf<AActor> ItemClass)
 		GetRandomPointInVolume(),
 		FRotator::ZeroRotator
 	);
-
 	return SpawnedActor;
 }
