@@ -73,7 +73,7 @@ void ASpartaGameState::StartLevel()
 		}
 	}
 
-	SpawnedCoinCount = 0;
+	/*SpawnedCoinCount = 0;
 	CollectedCoinCount = 0;
 
 	TArray<AActor*> FoundVolumes;
@@ -95,7 +95,7 @@ void ASpartaGameState::StartLevel()
 				}
 			}
 		}
-	}
+	}*/
 
 	GetWorldTimerManager().SetTimer(
 		WaveTimerHandle,
@@ -112,10 +112,10 @@ void ASpartaGameState::StartLevel()
 void ASpartaGameState::StartWave()
 {
 	CurrentWave++;
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Wave %d Start!!"), CurrentWave));
-	}
+	// if (GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Wave %d Start!!"), CurrentWave));
+	// }
 
 	SpawnedCoinCount = 0;
 	CollectedCoinCount = 0;

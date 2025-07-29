@@ -38,6 +38,9 @@ public:
 	FTimerHandle WaveTimerHandle;
 	FTimerHandle HUDUpdateTimerHandle;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Spawning")
+	TArray<AActor*> SpawnedItems;
+
 	UFUNCTION(BlueprintPure, Category = "Score")
 	int32 GetScore() const;
 	UFUNCTION(BlueprintCallable, Category = "Score")

@@ -76,7 +76,7 @@ void AMineItem::Explode()
 
 	DestroyItem();
 
-	if (Particle)
+	/*if (Particle)
 	{
 		FTimerHandle DestroyParticleTimerHandle;
 
@@ -89,5 +89,5 @@ void AMineItem::Explode()
 			2.0f,
 			false
 		);
-	}
+	}*/
 }

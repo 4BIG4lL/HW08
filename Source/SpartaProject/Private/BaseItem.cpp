@@ -68,7 +68,7 @@ void ABaseItem::ActivateItem(AActor* Activator)
 		);
 	}
 
-	if (Particle)
+	/*if (Particle)
 	{
 		FTimerHandle DestroyParticleTimerHandle;
 
@@ -81,7 +81,7 @@ void ABaseItem::ActivateItem(AActor* Activator)
 			2.0f,
 			false
 		);
-	}
+	}*/
 }
 
 FName ABaseItem::GetItemType() const
